@@ -1,19 +1,26 @@
 function renderColors(colors, carId) {
-  return colors.map((color, i) => `
+  return colors
+    .map(
+      (color, i) => `
     <button
-      class="car-card__color-btn ${i === 0 ? 'car-card__color-btn--active' : ''}"
+      class="car-card__color-btn ${i === 0 ? "car-card__color-btn--active" : ""}"
       style="background: ${color.hex}"
-      data-img="assets/img/cars/${carId}/${color.img}"
+      data-img="${color.img}"
       data-car="${carId}"
       title="${color.name}"
       aria-label="${color.name}"
     ></button>
-  `).join('');
+  `,
+    )
+    .join("");
 }
 
 function renderFeatures(features) {
   return features.map(f => `
-    <li class="car-card__feature">${f}</li>
+    <li class="car-card__feature">
+      <img src="assets/img/cars-card/${f.icon}" alt="" class="car-card__feature-icon">
+      <span>${f.text}</span>
+    </li>
   `).join('');
 }
 
@@ -30,7 +37,8 @@ function renderCard(car) {
             <p class="car-card__benefit">Выгода до <span class="car-card__price">${car.benefit}</span></p>
           </div>
           <button class="car-card__testdrive open-modal">
-            Записаться на тест-драйв
+            <img src="assets/img/cars-card/pen.svg" alt="" width="16" height="16">
+            Записаться<br>на тест-драйв
           </button>
         </div>
 
@@ -62,34 +70,37 @@ function renderCard(car) {
   `;
 }
 
-document.getElementById('cars-list').innerHTML = cars.map(renderCard).join('');
+document.getElementById("cars-list").innerHTML = cars.map(renderCard).join("");
 
-document.addEventListener('click', e => {
-  const btn = e.target.closest('.car-card__color-btn');
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".car-card__color-btn");
   if (!btn) return;
 
   const carId = btn.dataset.car;
   const img = document.getElementById(`car-img-${carId}`);
 
-  btn.closest('.car-card__colors')
-    .querySelectorAll('.car-card__color-btn')
-    .forEach(b => b.classList.remove('car-card__color-btn--active'));
-  btn.classList.add('car-card__color-btn--active');
+  btn
+    .closest(".car-card__colors")
+    .querySelectorAll(".car-card__color-btn")
+    .forEach((b) => b.classList.remove("car-card__color-btn--active"));
+  btn.classList.add("car-card__color-btn--active");
 
-  img.style.opacity = '0';
+  img.style.opacity = "0";
   setTimeout(() => {
     img.src = btn.dataset.img;
-    img.onload = () => { img.style.opacity = '1'; };
+    img.onload = () => {
+      img.style.opacity = "1";
+    };
   }, 200);
 });
 
-new Swiper('.cars__swiper', {
+new Swiper(".cars__swiper", {
   slidesPerView: 1,
   spaceBetween: 24,
-  pagination: { el: '.swiper-pagination', clickable: true },
+  pagination: { el: ".swiper-pagination", clickable: true },
   navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
   },
   breakpoints: {
     768: { slidesPerView: 2 },
