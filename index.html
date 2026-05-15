@@ -109,63 +109,65 @@
         </div>
         <button class="hero__button button">Зафиксировать условия</button>
       </section>
+      <button class="chat-btn" aria-label="Открыть чат">
+        <img src="./assets/img/chat.png" alt="" />
+      </button>
+
       <section class="timer">
-        <span class="timer__chat">
-          <img src="./assets/img/chat.png" alt="Чат" class="timer__chat-img" />
-        </span>
-        <!-- Sinoby Timer -->
-        <style>
-          /* Фиксирует высоту таймера до загрузки */
-          .sinoby-timer[data-sinoby-reserve="sinoby-m2whvk"] {
-            display: block;
-            min-height: 118px;
-          }
-          @media (max-width: 767px) {
+        <div class="timer__left">
+          <p class="timer__label">Оставьте заявку и зафиксируйте условия</p>
+          <!-- Sinoby Timer -->
+          <style>
+            /* Фиксирует высоту таймера до загрузки */
             .sinoby-timer[data-sinoby-reserve="sinoby-m2whvk"] {
-              min-height: 85px;
+              display: block;
+              min-height: 118px;
             }
-          }
-        </style>
-        <div
-          class="sinoby-timer"
-          data-sinoby-reserve="sinoby-m2whvk"
-          data-config='{
-          "type": "fixed-end",
-          "preset": "rings-soft",
-          "schedule": {
-            "endAt": "2026-06-01T00:00:00"
-          },
-          "style": {
-            "digitsFont": "Roboto, sans-serif",
-            "digitGap": 13,
-            "digitColor": "#000000",
-            "labelsFont": "Inter, sans-serif",
-            "labelSize": 18,
-            "labelGap": 0,
-            "labelColor": "#8b8b8b",
-            "separatorSize": 37,
-            "cardBackgroundColor": "#f8fafc",
-            "ringCurrentColor": "#00cabf",
-            "ringRemainingColor": "#cecece",
-            "ringThickness": 10
-          }
-        }'
-          data-lazy="true"
-        ></div>
-        <script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
-        <!-- /Sinoby Timer -->
+            @media (max-width: 767px) {
+              .sinoby-timer[data-sinoby-reserve="sinoby-m2whvk"] {
+                min-height: 85px;
+              }
+            }
+          </style>
+          <div
+            class="sinoby-timer"
+            data-sinoby-reserve="sinoby-m2whvk"
+            data-config='{
+            "type": "fixed-end",
+            "preset": "rings-soft",
+            "schedule": {
+              "endAt": "2026-06-01T00:00:00"
+            },
+            "style": {
+              "digitsFont": "Roboto, sans-serif",
+              "digitGap": 13,
+              "digitColor": "#000000",
+              "labelsFont": "Inter, sans-serif",
+              "labelSize": 18,
+              "labelGap": 0,
+              "labelColor": "#8b8b8b",
+              "separatorSize": 37,
+              "cardBackgroundColor": "#f8fafc",
+              "ringCurrentColor": "#00cabf",
+              "ringRemainingColor": "#cecece",
+              "ringThickness": 10
+            }
+          }'
+            data-lazy="true"
+          ></div>
+          <script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260514a"></script>
+          <!-- /Sinoby Timer -->
+        </div>
         <button class="timer__button button">Зафиксировать условия</button>
       </section>
       <section class="cars">
-  <div class="swiper cars__swiper">
-    <div class="swiper-wrapper cars__list" id="cars-list">
-
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
+        <div class="swiper cars__swiper">
+          <div class="swiper-wrapper cars__list" id="cars-list"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

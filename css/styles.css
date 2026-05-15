@@ -1,3 +1,23 @@
+.button {
+  color: var(--color-white);
+  background-color: var(--color-teal, #00cabf);
+  font-family: var(--font-haval, sans-serif);
+  font-weight: var(--fw-light, 300);
+  text-transform: uppercase;
+  padding: 10px 22px;
+  font-size: 24px;
+}
+
+.chat-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
+  z-index: var(--z-modal);
+  background: none;
+  border: 6px solid rgba(128, 128, 128, 0.8);
+  border-radius: 40px;
+  cursor: pointer;
+}
 .header {
   background-color: var(--color-black, #000);
 }
@@ -86,12 +106,39 @@
   color: var(--color-teal, #00cabf);
 }
 
-.button {
-  color: var(--color-white);
-  background-color: var(--color-teal, #00cabf);
-  font-family: var(--font-haval, sans-serif);
-  font-weight: var(--fw-light, 300);
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 20px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.timer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.timer__label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  letter-spacing: .06em;
   text-transform: uppercase;
-  padding: 10px 22px;
-  font-size: 24px;
+  color: var(--color-black);
+}
+
+.timer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.timer__button {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
