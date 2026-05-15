@@ -1,0 +1,97 @@
+.header {
+  background-color: var(--color-black, #000);
+}
+
+.header__top {
+  color: var(--color-white, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__bottom {
+  color: var(--color-white, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header__cars-list,
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container, 1170px);
+  margin: 0 auto;
+  padding: 15px;
+  font-family: var(--font-haval, sans-serif);
+  font-weight: var(--fw-light, 300);
+}
+
+.header__info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  gap: 2px;
+}
+
+.header__contact{
+  font-weight: var(--fw-regular, 400);
+  font-size: var(--fs-large, 24px);
+}
+
+.hero{
+  min-height: 760px;
+  background-image: url(../assets/img/Background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.hero__title-container{
+  width: var(--container);
+  font-family: var(--font-haval, sans-serif);
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.hero__title {
+  color: var(--color-white, #fff);  
+}
+
+.hero__title-span{
+  color: var(--color-teal, #00cabf);
+}
+
+.button {
+  color: var(--color-white);
+  background-color: var(--color-teal, #00cabf);
+  font-family: var(--font-haval, sans-serif);
+  font-weight: var(--fw-light, 300);
+  text-transform: uppercase;
+  padding: 10px 22px;
+  font-size: 24px;
+}
