@@ -1,0 +1,104 @@
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.chat-btn:hover {
+  border-color: var(--color-teal, #00cabf);
+}
+
+.chat-btn:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 4px;
+}
+
+.header-car:hover {
+  color: var(--color-teal, #00cabf);
+}
+
+.header__nav-item:hover {
+  color: var(--color-teal, #00cabf);
+}
+
+/* Hero button hover */
+.hero__button:hover {
+  opacity: 0.85;
+}
+
+.hero__button:focus-visible {
+  outline: 2px solid var(--color-white, #fff);
+  outline-offset: 2px;
+}
+
+/* Timer button hover/focus */
+.timer__button:hover {
+  opacity: 0.85;
+}
+
+.timer__button:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.car-card__testdrive:hover {
+  opacity: 0.7;
+}
+
+.car-card__testdrive:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.car-card__color-btn:hover,
+.car-card__color-btn--active {
+  border-color: var(--color-teal, #00cabf);
+}
+
+.car-card__color-btn:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.car-card__feature:hover .car-card__feature-icon {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(79%) saturate(1412%) hue-rotate(137deg) brightness(95%) contrast(101%);
+}
+
+.car-card__feature:focus-visible {
+  outline: 2px solid var(--color-teal, #00cabf);
+  outline-offset: 2px;
+}
+
+.button--teal:hover {
+  background-color: #00b5ad;
+}
+
+.button--black:hover {
+  background-color: #333333;
+}
+
+.button--outline:hover {
+  background-color: var(--color-black, #000);
+  color: var(--color-white, #fff);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--color-teal, #00cabf);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-teal, #00cabf);
+}

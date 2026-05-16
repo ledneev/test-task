@@ -3,6 +3,8 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-teal: #00cabf;
+  --color-gray-light: #f2f2f2;
+  --color-gray-border: #e0e0e0;
 
   /* Typography */
   --font-haval: 'Haval', sans-serif;
@@ -16,22 +18,25 @@
   --fw-bold: 700;
 
   /* Font sizes */
+  --fs-xxs: 10px;
   --fs-xs: 11px;
   --fs-sm: 13px;
   --fs-base: 16px;
   --fs-md: 18px;
-  --fs-lg: 24px;
-  --fs-xl: 32px;
-  --fs-2xl: 48px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 32px;
+  --fs-3xl: 48px;
 
   /* Spacing */
   --space-xs: 4px;
   --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 40px;
-  --space-2xl: 64px;
-  --space-3xl: 96px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 40px;
+  --space-4xl: 48px;
 
   /* Transitions */
   --transition-fast: 0.15s ease;
