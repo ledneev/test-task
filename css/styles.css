@@ -99,7 +99,8 @@
 }
 
 .hero__title-container {
-  width: var(--container, 1170px);
+  width: 70%;
+  max-width: var(--container-width);
   margin-bottom: var(--space-2xl, 24px);
   padding: var(--space-xl, 20px);
   font-family: var(--font-haval, sans-serif);
@@ -132,6 +133,7 @@
 
 /* Timer */
 .timer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,18 +155,10 @@
 
 .timer__label {
   color: var(--color-black, #000);
-  font-family: var(--font-haval, sans-serif);
   font-weight: var(--fw-light, 300);
-  font-size: var(--fs-xxs, 10px);
+  font-size: var(--fs-base, 16px);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.timer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-2xl, 24px);
 }
 
 .timer__button {
@@ -197,14 +191,14 @@
   border: 1px solid var(--color-gray-border, #e0e0e0);
   padding: 40px;
   background: var(--color-gray-light, #f2f2f2);
+  max-width: 560px;
 }
 
 .car-card__badge {
   position: absolute;
   top: -22px;
-  left: 80%;
-  padding: 4px 16px;
-  padding: var(--space-xs, 5px) var(--space-lg, 20px);
+  left: 77%;
+  padding: 7px 20px;
   color: var(--color-white, #fff);
   font-family: var(--font-haval, sans-serif);
   font-weight: var(--fw-bold, 700);
@@ -215,6 +209,12 @@
   background: var(--color-teal, #00cabf);
   transform: translateX(-50%);
   white-space: nowrap;
+  width: 187px;
+  height: 42px;
+}
+
+.car-card__badge-count {
+  color: var(--color-black);
 }
 
 .car-card__header {
@@ -223,9 +223,6 @@
   align-items: flex-start;
   gap: var(--space-md, 12px);
   max-width: 480px;
-  margin-top: var(--space-lg, 16px);
-  margin-bottom: var(--space-sm, 8px);
-  margin-bottom: 0;
   border-bottom: none;
   padding: var(--space-2xl, 24px);
   background-color: var(--color-white, #fff);
@@ -247,6 +244,7 @@
 
 .car-card__price {
   color: var(--color-teal, #00cabf);
+  font-weight: var(--fw-medium);
 }
 
 .car-card__testdrive {
@@ -262,7 +260,6 @@
   justify-content: center;
   align-items: center;
   max-width: 480px;
-  height: 300px;
   max-height: 240px;
   margin: var(--space-md, 12px) 0;
   margin-top: 0;
@@ -290,8 +287,8 @@
 .car-card__color-btn {
   width: 28px;
   height: 28px;
+  border-radius: 50%;
   border: 2px solid transparent;
-  border-radius: var(--radius-full, 9999px);
   transition: border-color var(--transition-fast, 0.15s ease);
   cursor: pointer;
 }
@@ -314,12 +311,13 @@
   line-height: 1.4;
   transition: color var(--transition-fast, 0.15s ease);
   cursor: pointer;
+  font-family: var(--font-haval);
 }
 
 .car-card__feature-icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   margin-top: 1px;
 }
 
@@ -343,7 +341,10 @@
 }
 
 .button--outline {
-  border: 2px solid var(--color-black, #000);
+  border: 1px solid var(--color-black, #000);
   color: var(--color-black, #000);
   background: transparent;
+}
+.car-card__img {
+  transition: opacity 0.3s ease;
 }

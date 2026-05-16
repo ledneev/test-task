@@ -3,13 +3,13 @@ const cars = [
     id: "m6",
     name: "HAVAL M6",
     benefit: "410 000 ₽",
-    badge: "В наличии<br><strong>21 автомобиль</strong>",
+    badge: 'В наличии<br><span class="car-card__badge-count">21 автомобиль</span>',
     features: [
       { text: "Выгода по госпрограмме", icon: "1.svg" },
-      { text: "Максимальные выгоды по трейд-ин", icon: "2.svg" },
+      { text: "Максимальные выгоды по трейд-ин", icon: "4.svg" },
       { text: "КАСКО в подарок", icon: "3.svg" },
-      { text: "Зимние шины в подарок", icon: "4.svg" },
-      { text: "Доп.оборудование на 100 000р в подарок", icon: "5.svg" },
+      { text: "Зимние шины в подарок", icon: "5.svg" },
+      { text: "Доп.оборудование на 100 000р в подарок", icon: "4.svg" },
     ],
     colors: [
       { name: "Чёрный неметаллик", hex: "#1a1a1a", img: "assets/img/M6/black.png" },
@@ -32,10 +32,10 @@ const cars = [
     badge: "В наличии",
     features: [
       { text: "Выгода по госпрограмме", icon: "1.svg" },
-      { text: "Максимальные выгоды по трейд-ин", icon: "2.svg" },
+      { text: "Максимальные выгоды по трейд-ин", icon: "4.svg" },
       { text: "КАСКО в подарок", icon: "3.svg" },
-      { text: "Зимние шины в подарок", icon: "4.svg" },
-      { text: "Доп.оборудование на 100 000р в подарок", icon: "5.svg" },
+      { text: "Зимние шины в подарок", icon: "5.svg" },
+      { text: "Доп.оборудование на 100 000р в подарок", icon: "4.svg" },
     ],
     colors: [
       { name: "Агат", hex: "#b0b0b0", img: "assets/img/DRAGO-X/agat.png" },
