@@ -72,6 +72,34 @@ function renderCard(car) {
 
 document.getElementById("cars-list").innerHTML = cars.map(renderCard).join("");
 
+document.addEventListener('click', e => {
+  if (e.target.closest('.open-modal')) {
+    e.preventDefault();
+    $.fancybox.open({
+      src: '#modal-form',
+      type: 'inline',
+    });
+  }
+});
+
+document.getElementById('modal-phone').addEventListener('input', function() {
+  let val = this.value.replace(/\D/g, '');
+  if (val.startsWith('7') || val.startsWith('8')) val = val.slice(1);
+  let result = '+7';
+  if (val.length > 0) result += ' (' + val.slice(0, 3);
+  if (val.length >= 3) result += ') ' + val.slice(3, 6);
+  if (val.length >= 6) result += '-' + val.slice(6, 8);
+  if (val.length >= 8) result += '-' + val.slice(8, 10);
+  this.value = result;
+});
+
+document.querySelector('.chat-btn').addEventListener('click', () => {
+  $.fancybox.open({
+    src: '#modal-chat',
+    type: 'inline',
+  });
+});
+
 document.addEventListener("click", (e) => {
   const btn = e.target.closest(".car-card__color-btn");
   if (!btn) return;
