@@ -54,5 +54,6 @@
   --z-modal: 200;
   --z-tooltip: 300;
 
-  --container: 1170px
+  --container: 1170px;
+  --container-padding: 20px;
 }

@@ -16,6 +16,20 @@
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-sm);
+    overflow: hidden;
+  }
+
+  .header__cars-list {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .header__cars-list-item {
+    white-space: nowrap;
   }
 
   .hero {
@@ -32,11 +46,24 @@
     flex-direction: column;
     gap: var(--space-lg);
     text-align: center;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+
+  .timer__left {
+    width: 100%;
+    max-width: 100%;
   }
 
   .timer__button {
     width: 100%;
     padding: 18px;
+  }
+
+  /* Sinoby timer adjustments */
+  .sinoby-timer[data-sinoby-reserve="sinoby-4h993s"] {
+    overflow: hidden;
+    max-width: 100%;
   }
 
   /* cards */
@@ -61,6 +88,16 @@
 
 @media (max-width: 480px) {
   .header__contact { font-size: var(--fs-sm); }
+
+  .header__cars-list {
+    font-size: var(--fs-xxs);
+    gap: var(--space-xs);
+  }
+
+  .header__cars-list-item {
+    white-space: normal;
+    max-width: 100%;
+  }
 
   .hero__title-container { font-size: var(--fs-base); }
 
